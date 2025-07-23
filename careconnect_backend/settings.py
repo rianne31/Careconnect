@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&%$t*ul)dyji8!iv3ms)#xj_ydp4bd!(p$u4grp^5eedxtnw%z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'testserver']
 
 
 # Application definition
@@ -129,6 +129,7 @@ CORS_ALLOW_ALL_ORIGINS = True  # For development only; restrict in production
 # REST Framework settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
