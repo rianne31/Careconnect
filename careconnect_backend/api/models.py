@@ -85,7 +85,7 @@ class DonorTier(models.Model):
 class Transaction(models.Model):
     # Blockchain transaction log
     donor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='transactions')
-    txn_hash = models.CharField(max_length=100)
+    txn_hash = models.CharField(max_length=100, blank=True, null=True)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     date = models.DateTimeField(auto_now_add=True)
     auction_item = models.ForeignKey(AuctionItem, on_delete=models.SET_NULL, null=True, blank=True)
