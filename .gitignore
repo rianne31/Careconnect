@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 node_modules/
 npm-debug.log*
@@ -74,3 +75,30 @@ media/
 
 # OS
 Thumbs.db
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+.env
+venv/
+*.env
+
+# VSCode
+.vscode/
+
+# OS generated
+.DS_Store
+Thumbs.db
+>>>>>>> ac71060fc259f3475305b5cb5c7357c362549644

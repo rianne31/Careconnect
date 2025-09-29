@@ -3,10 +3,16 @@
 import os
 import sys
 
+<<<<<<< HEAD
 
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
+=======
+def main():
+    """Run administrative tasks."""
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'careconnect_backend.settings')
+>>>>>>> ac71060fc259f3475305b5cb5c7357c362549644
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -17,6 +23,9 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac71060fc259f3475305b5cb5c7357c362549644
 if __name__ == '__main__':
     main()

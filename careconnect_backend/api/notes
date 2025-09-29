@@ -1,0 +1,47 @@
+This is our to do list and what weve accomplished so far:
+1.1. Core Setup 
+Initialize Django project and app structure
+Install and configure required packages (DRF, JWT, CORS)
+Configure REST framework, authentication, and CORS
+1.2. Models & Database 
+UserProfile (role: admin, donor)
+PatientProfile (de-identified)
+AuctionItem
+Bid
+donation
+DonorTier
+Transaction
+Register models in admin
+1.3 Serializaers
+Create serialiers for all models
+1.4 Views & Permissions
+Create ModelViewSets for all models
+Implement persmissions (admin/donor access control)
+Add custom logic for bid creation, Donation
+1.5 API Routing
+Set up routers and URLs for all endpoints
+Add JWT auth endpoints 
+1.6 Media & Static Files 
+Configure media file handling for auction images 
+1.7 Testing
+Write unit and integration tests for all endpoints
+Test permissions and authentication flows
+Integrate Web3.py for blockchain transaction logging
+Store blockchain transaction hashes in Transaction model
+
+Frontend
+1.1 Core setup
+Set up navigation, themeing, and state management
+1.2 Authentication
+Implement login/register screens (JWT)
+Handle user roles (admin/donor)
+1.4 Auction System
+List auction items 
+View item details and bid history
+Place bids (donor)
+Create/manage auction (admin)
+Show auction countdowns and status
+1.5 Donations
+Make monetary or item donations
+View donation history (donor)
+Admin view of all donations
