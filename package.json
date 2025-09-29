@@ -1,0 +1,38 @@
+{
+  "name": "careconnect",
+  "version": "1.0.0",
+  "description": "CareConnect - Healthcare donation and auction platform",
+  "private": true,
+  "workspaces": [
+    "careconnect-expo"
+  ],
+  "scripts": {
+    "install:expo": "cd careconnect-expo && npm install",
+    "start:expo": "cd careconnect-expo && npm start",
+    "android:expo": "cd careconnect-expo && npm run android",
+    "ios:expo": "cd careconnect-expo && npm run ios",
+    "web:expo": "cd careconnect-expo && npm run web",
+    "test:expo": "cd careconnect-expo && npm test",
+    "build:expo": "cd careconnect-expo && npm run build"
+  },
+  "keywords": [
+    "healthcare",
+    "donation",
+    "auction",
+    "react-native",
+    "expo",
+    "django"
+  ],
+  "author": "CareConnect Team",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
+    "jest": "^29.7.0",
+    "jest-expo": "^53.0.9",
+    "react-test-renderer": "^19.1.1"
+  }
+}
